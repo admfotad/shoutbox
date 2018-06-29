@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block 'content' %}
+    <form method="POST">
+        <table>
+            <tr><td>
+    {% csrf_token %}
+                </td></tr>
+    {{ form }}
+    <tr>
+        <td><input type="Submit" value="Zapisz"></td>
+    </tr>
+        </table>
+
+    </form>
+{% endblock 'content' %}
+
